@@ -8,13 +8,13 @@ const Pricing = () => {
       icon: <Trophy className="h-6 w-6" />,
       emoji: "🥉",
       title: "Bronze Support",
-      price: "Kostenlos",
-      description: "Perfekt für den Einstieg",
+      price: "Free",
+      description: "Perfect for beginners",
       features: [
         "Community Support",
-        "Zugang zum Forum",
-        "Offene Support-Kanäle auf Discord",
-        "Basis-Dokumentation"
+        "Access to the forum",
+        "Open support channels on Discord",
+        "Caesar Documentation"
       ],
       color: "from-amber-500 to-amber-600",
       borderColor: "border-amber-500/20",
@@ -24,14 +24,14 @@ const Pricing = () => {
       icon: <Star className="h-6 w-6" />,
       emoji: "🥈",
       title: "Silver Support",
-      price: "€19/Monat",
-      description: "Für wachsende Projekte",
+      price: "€5/Month",
+      description: "For growing projects",
       features: [
-        "Support via E-Mail (12h Antwortzeit)",
-        "Priorität bei Discord-Tickets",
-        "Priorität bei Discord-Support",
-        "Erweiterte Dokumentation",
-        "Beta-Zugang zu neuen Features"
+        "Support via eMail (12hrs in average)",
+        "Priority in Discord Tickets",
+        "Priority at Discord support",
+        "Dedicated support and setup-service",
+        "Free hosting of your Caesar instance"
       ],
       color: "from-slate-400 to-slate-500",
       borderColor: "border-slate-400/20",
@@ -41,15 +41,16 @@ const Pricing = () => {
       icon: <Crown className="h-6 w-6" />,
       emoji: "🥇",
       title: "Gold Support",
-      price: "€49/Monat",
-      description: "Für professionelle Teams",
+      price: "€15/Month",
+      description: "For professional teams",
       features: [
-        "E-Mail Support (1h Antwortzeit)",
-        "Telefon-Support",
-        "Höchste Priorität auf Discord",
-        "Dedizierter Account-Manager",
+        "Support via eMail (1hr in average)",
+        "Phone support",
+        "Highest priority on Discord",
+        "Dedicated point of contact",
         "Custom Integration Support",
-        "Priority Plugin Reviews"
+        "Priority Plugin Reviews",
+        "Free sub-domain for your hosted instance"
       ],
       color: "from-yellow-400 to-yellow-500",
       borderColor: "border-yellow-400/20",
@@ -63,10 +64,10 @@ const Pricing = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-            Support-Level
+            Support Levels
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Caesar ist kostenlos und Open-Source. Wähle den Support-Level, der zu deinen Bedürfnissen passt.
+            Caesar is free and open-source. Choose the support level that fits your needs.
           </p>
         </div>
 
@@ -74,14 +75,14 @@ const Pricing = () => {
         <div className="bg-gradient-card backdrop-blur-glass border border-white/10 rounded-2xl p-8 mb-12 text-center">
           <div className="inline-flex items-center gap-3 mb-4">
             <div className="w-3 h-3 bg-gradient-primary rounded-full animate-pulse" />
-            <span className="text-lg font-semibold text-primary">Basis-Plan</span>
+            <span className="text-lg font-semibold text-primary">Basic Plan</span>
           </div>
-          <h3 className="text-3xl font-bold text-foreground mb-2">Kostenlos für immer</h3>
+          <h3 className="text-3xl font-bold text-foreground mb-2">Free forever</h3>
           <p className="text-muted-foreground mb-6">
-            Vollständiger Feature-Zugang • Plugin-Marketplace • Bronze Support
+            Full feature access • Plugin Marketplace • Bronze Support
           </p>
           <Button variant="hero" size="lg">
-            Jetzt starten
+            Start now
           </Button>
         </div>
 
@@ -97,7 +98,7 @@ const Pricing = () => {
               {/* Popular Badge */}
               {level.popular && (
                 <div className="absolute -top-1 -right-1 bg-gradient-primary text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                  Beliebt
+                  Popular
                 </div>
               )}
 
@@ -135,7 +136,7 @@ const Pricing = () => {
                   className="w-full"
                   size="lg"
                 >
-                  {index === 0 ? "Community beitreten" : "Support wählen"}
+                  {index === 0 ? "Get started" : "Buy plan"}
                 </Button>
               </div>
             </Card>
@@ -145,10 +146,10 @@ const Pricing = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">
-            Fragen zu den Support-Optionen? Wir helfen gerne weiter.
+            Questions about support options? We're here to help!
           </p>
           <Button variant="glass" size="lg">
-            Kontakt aufnehmen
+            Get in touch
           </Button>
         </div>
       </div>

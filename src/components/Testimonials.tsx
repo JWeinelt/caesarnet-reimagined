@@ -6,23 +6,23 @@ const Testimonials = () => {
     {
       name: "Michael Mawick",
       role: "Server Administrator",
-      avatar: "https://github.com/LeMichiii.png",
+      avatar: "https://github.com/PluginCrafter.png",
       rating: 5,
-      text: "Caesar ist das Beste, was ich je benutzt habe! Einfaches Panel und super entspannt. Einfach empfehlenswert!"
+      text: "Caesar is the best tool I've ever used! The panel is simple and incredibly smooth. Absolutely recommend it!"
     },
     {
       name: "Julia Schmidt",
       role: "Community Manager",
       avatar: "https://github.com/octocat.png",
       rating: 5,
-      text: "Die Plugin-Integration ist fantastisch. Endlich kann ich meinen Server verwalten, ohne stundenlang in der Konsole zu arbeiten."
+      text: "The plugin integration is fantastic. Finally, I can manage my server without spending hours working in the console."
     },
     {
-      name: "Thomas Weber",
-      role: "Entwickler",
-      avatar: "https://github.com/torvalds.png",
+      name: "FirecraftGHG",
+      role: "Developer",
+      avatar: "https://github.com/FireAnimationStudios.png",
       rating: 5,
-      text: "Als Open-Source-Projekt überzeugt Caesar auf ganzer Linie. Die API ist durchdacht und die Community ist sehr hilfsbereit."
+      text: "As an open-source project, Caesar impresses on every level. The API is well-designed, and the community is incredibly supportive."
     }
   ];
 
@@ -32,10 +32,10 @@ const Testimonials = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-            Was unsere Nutzer sagen
+            What our users say
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Erfahre, wie Caesar anderen dabei hilft, ihre Server effizient zu verwalten.
+            Discover how Caesar helps others manage their servers efficiently.
           </p>
         </div>
 
@@ -86,12 +86,12 @@ const Testimonials = () => {
         <div className="mt-16 text-center">
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div>
-              <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">500+</div>
-              <p className="text-muted-foreground">Zufriedene Nutzer</p>
+              <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">4+</div>
+              <p className="text-muted-foreground">Satisfied users</p>
             </div>
             <div>
-              <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">1000+</div>
-              <p className="text-muted-foreground">Verwaltete Server</p>
+              <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">10+</div>
+              <p className="text-muted-foreground">Managed servers</p>
             </div>
             <div>
               <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-2">24/7</div>

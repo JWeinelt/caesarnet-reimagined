@@ -2,29 +2,29 @@ import { Github, MessageCircle, Book, Heart } from "lucide-react";
 
 const Footer = () => {
   const footerLinks = {
-    "Produkt": [
+    "Software": [
       { name: "Features", href: "#features" },
-      { name: "Preise", href: "#pricing" },
+      { name: "Pricing", href: "#pricing" },
       { name: "Plugins", href: "#plugins" },
-      { name: "Roadmap", href: "#" }
+      { name: "Roadmap", href: "https://github.com/JWeinelt/Caesar/blob/main/RoadMap.md" }
     ],
     "Community": [
-      { name: "Discord", href: "#", icon: <MessageCircle className="h-4 w-4" /> },
-      { name: "GitHub", href: "#", icon: <Github className="h-4 w-4" /> },
-      { name: "Forum", href: "#" },
-      { name: "Blog", href: "#" }
+      { name: "Discord", href: "https://dc.caesarnet.cloud", icon: <MessageCircle className="h-4 w-4" /> },
+      { name: "GitHub", href: "https://github.com/Caesar", icon: <Github className="h-4 w-4" /> },
+      { name: "Forum", href: "https://forum.caesarnet.cloud" },
+      { name: "Blog", href: "https://blog.caesarnet.cloud" }
     ],
     "Support": [
-      { name: "Dokumentation", href: "#", icon: <Book className="h-4 w-4" /> },
-      { name: "Support-Center", href: "#" },
-      { name: "Status", href: "#" },
-      { name: "Kontakt", href: "#" }
+      { name: "Documentation", href: "https://docs.caesarnet.cloud", icon: <Book className="h-4 w-4" /> },
+      { name: "Support center", href: "https://support.caesarnet.cloud" },
+      { name: "Status", href: "https://status.caesarnet.cloud" },
+      { name: "Contact", href: "https://caesarnet.cloud/contact" }
     ],
-    "Rechtliches": [
-      { name: "Datenschutz", href: "#" },
-      { name: "Impressum", href: "#" },
-      { name: "AGB", href: "#" },
-      { name: "Lizenz", href: "#" }
+    "Legal": [
+      { name: "Privacy policy", href: "https://caesarnet.cloud/privacy" },
+      { name: "Imprint", href: "https://caesarnet.cloud/imprint" },
+      { name: "ToS", href: "https://caesarnet.cloud/tos" },
+      { name: "License", href: "https://www.gnu.org/licenses/gpl-3.0.html" }
     ]
   };
 
@@ -36,14 +36,11 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">C</span>
-              </div>
+              <img src="/src/assets/logo.png" alt="Caesar Logo" className="w-8 h-8" />
               <span className="text-xl font-bold text-foreground">Caesar</span>
             </div>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Mach Server-Management einfach und benutzerfreundlich. Caesar ist die moderne, 
-              Open-Source-Lösung für alle deine Server-Verwaltungsaufgaben.
+              Make server management simple and user-friendly. Caesar is the modern, open-source solution for all your server administration needs.
             </p>
             <div className="flex items-center gap-4">
               <a 
@@ -58,7 +55,7 @@ const Footer = () => {
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
               >
                 <Heart className="h-5 w-5" />
-                <span className="text-sm">Mit ❤️ erstellt</span>
+                <span className="text-sm">Created with ❤️</span>
               </a>
             </div>
           </div>
@@ -88,17 +85,17 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-sm text-muted-foreground">
-              © 2024 Caesar. Alle Rechte vorbehalten. MIT Lizenz.
+              © 2024 Caesar. Licensed under GNU GPL v3.
             </div>
             
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <span>Version 2.1.0</span>
+              <span>Version 0.0.2</span>
               <div className="w-px h-4 bg-border" />
-              <span>Letzte Aktualisierung: Heute</span>
+              <span>Last update: 27th July 2025</span>
               <div className="w-px h-4 bg-border" />
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-                <span>Alle Systeme aktiv</span>
+                <span>All systems running</span>
               </div>
             </div>
           </div>

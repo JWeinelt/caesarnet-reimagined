@@ -7,20 +7,20 @@ const Community = () => {
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Discord Community",
-      description: "Tritt unserer aktiven Discord-Community bei und erhalte sofortige Hilfe von anderen Nutzern und Entwicklern.",
-      action: "Discord beitreten"
+      description: "Join our active Discord community and receive instant help from fellow users and developers.",
+      action: "Join Discord"
     },
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Entwickler-Forum",
-      description: "Diskutiere über neue Features, teile deine Ideen und arbeite mit anderen Entwicklern zusammen.",
-      action: "Forum besuchen"
+      title: "Forum",
+      description: "Discuss new features, share your ideas, and collaborate with other developers.",
+      action: "Visit Forum"
     },
     {
       icon: <Heart className="h-6 w-6" />,
       title: "Open Source",
-      description: "Caesar ist vollständig Open Source. Trage zum Projekt bei und gestalte die Zukunft mit.",
-      action: "Zu GitHub"
+      description: "Caesar is fully open source. Contribute to the project and help shape the future.",
+      action: "View GitHub"
     }
   ];
 
@@ -30,10 +30,10 @@ const Community = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-6">
-            Werde Teil der Community
+            Become part of our amazing community
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Erhalte exklusiven Support, teile dein Feedback und vernetze dich mit anderen Server-Administratoren.
+            Get exclusive support, share your feedback, and connect with other server administrators.
           </p>
         </div>
 
@@ -76,20 +76,20 @@ const Community = () => {
           {/* Content */}
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Bereit, dein Server-Management zu revolutionieren?
+              Ready to revolutionize your server management?
             </h3>
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-              Schließe dich Hunderten von Entwicklern an, die Caesar bereits heute nutzen.
+              Join dozens of users who are already using Caesar today.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="glass" size="xl" className="group bg-white/10 text-white border-white/20 hover:bg-white hover:text-black">
-                Jetzt starten
+                Get Started
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               
               <Button variant="ghost" size="xl" className="text-white/80 hover:text-white hover:bg-white/10">
-                Dokumentation
+                Documentation
               </Button>
             </div>
           </div>
@@ -102,14 +102,14 @@ const Community = () => {
         {/* Social Proof */}
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-6">
-            Vertraut von Server-Administratoren weltweit
+            Trusted by server administrators worldwide
           </p>
           <div className="flex items-center justify-center gap-8 opacity-60">
-            <div className="text-2xl font-bold">500+ Nutzer</div>
+            <div className="text-2xl font-bold">10+ Users</div>
             <div className="w-px h-6 bg-border" />
             <div className="text-2xl font-bold">Open Source</div>
             <div className="w-px h-6 bg-border" />
-            <div className="text-2xl font-bold">MIT Lizenz</div>
+            <div className="text-2xl font-bold">GPL v3 License</div>
           </div>
         </div>
       </div>

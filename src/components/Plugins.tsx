@@ -4,32 +4,32 @@ import { ArrowRight, Download, Star, Users } from "lucide-react";
 
 const Plugins = () => {
   const stats = [
-    { label: "Verfügbare Plugins", value: "150+", icon: <Download className="h-5 w-5" /> },
-    { label: "Aktive Entwickler", value: "50+", icon: <Users className="h-5 w-5" /> },
-    { label: "Downloads", value: "10k+", icon: <Star className="h-5 w-5" /> }
+    { label: "Available plugins", value: "150+", icon: <Download className="h-5 w-5" /> },
+    { label: "Active developers", value: "10+", icon: <Users className="h-5 w-5" /> },
+    { label: "Downloads", value: "0", icon: <Star className="h-5 w-5" /> }
   ];
 
   const featuredPlugins = [
     {
-      name: "Performance Monitor",
+      name: "Caesar-Echo+",
       description: "Überwache Server-Performance in Echtzeit",
-      downloads: "2.3k",
+      downloads: "20",
+      rating: 4.9,
+      category: "Communication"
+    },
+    {
+      name: "Courier",
+      description: "Your integrated eMail client",
+      downloads: "25",
+      rating: 4.8,
+      category: "Communication"
+    },
+    {
+      name: "Oculus",
+      description: "Manage and monitor your server with ease!",
+      downloads: "10",
       rating: 4.9,
       category: "Monitoring"
-    },
-    {
-      name: "Auto Backup",
-      description: "Automatische Backup-Erstellung für deine Welten",
-      downloads: "1.8k",
-      rating: 4.8,
-      category: "Backup"
-    },
-    {
-      name: "Security Suite",
-      description: "Erweiterte Sicherheitsfeatures für deinen Server",
-      downloads: "3.1k",
-      rating: 4.9,
-      category: "Security"
     }
   ];
 
@@ -39,10 +39,10 @@ const Plugins = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-6">
-            Plugin-Marketplace
+            Plugin Marketplace
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Erweitere Caesar mit einem Klick. Durchsuche und installiere Plugins direkt aus dem Caesar-Panel.
+            Extend Caesar with a single click. Browse and install plugins directly from the Caesar Panel.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const Plugins = () => {
 
         {/* Featured Plugins */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Beliebte Plugins</h3>
+          <h3 className="text-2xl font-bold text-foreground mb-8 text-center">Popular Plugins</h3>
           <div className="grid md:grid-cols-3 gap-6">
             {featuredPlugins.map((plugin, index) => (
               <Card key={index} className="bg-gradient-card backdrop-blur-glass border border-white/10 p-6 hover:scale-105 transition-all duration-300 hover:shadow-accent">
@@ -96,11 +96,11 @@ const Plugins = () => {
         {/* Installation Demo */}
         <div className="bg-gradient-card backdrop-blur-glass border border-white/10 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-foreground mb-6">
-            Plugin-Installation leicht gemacht
+            Installation of plugins made easy
           </h3>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Keine komplizierte Installation mehr. Wähle ein Plugin, klicke installieren - fertig. 
-            Caesar kümmert sich um den Rest.
+No more complicated installations. Choose a plugin, click install - done.<br></br>
+Caesar takes care of the rest.
           </p>
           
           {/* Installation Steps */}
@@ -117,7 +117,7 @@ const Plugins = () => {
           </div>
 
           <Button variant="accent" size="lg" className="group">
-            Plugin-Marketplace besuchen
+            Visit Plugin Marketplace
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
         </div>

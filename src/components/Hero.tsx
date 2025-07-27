@@ -23,42 +23,42 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-card backdrop-blur-glass border border-white/10">
             <div className="w-2 h-2 bg-gradient-primary rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-foreground">Vollständig Open-Source</span>
+            <span className="text-sm font-medium text-foreground">Fully Open Source</span>
           </div>
 
           {/* Main Heading */}
           <div className="space-y-6">
             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-primary bg-clip-text text-transparent leading-tight">
-              Ein Ziel.
+              One Goal.
             </h1>
             <h2 className="text-6xl md:text-8xl font-bold bg-gradient-accent bg-clip-text text-transparent leading-tight">
-              Eine Software.
+              One Software.
             </h2>
           </div>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Mach Server-Management einfach und benutzerfreundlich.
+            Make server management easy and user-friendly.
             <br />
-            <span className="text-primary font-semibold">Caesar</span> - Die moderne Lösung für deine Server.
+            <span className="text-primary font-semibold">Caesar</span> - the modern solution for your server.
           </p>
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <Button variant="hero" size="xl" className="group">
-              Jetzt starten
+              Get started
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             
             <Button variant="glass" size="xl" className="group">
               <Github className="mr-2 h-5 w-5" />
-              GitHub ansehen
+              Look at GitHub
             </Button>
           </div>
 
           {/* Quick Start */}
           <div className="pt-12">
-            <p className="text-sm text-muted-foreground mb-4">Schnellstart mit einem Befehl</p>
+            <p className="text-sm text-muted-foreground mb-4">Quick start with just one command</p>
             <div className="inline-flex items-center gap-3 px-6 py-4 bg-gradient-card backdrop-blur-glass border border-white/10 rounded-lg">
               <code className="text-primary font-mono">git clone https://github.com/JWeinelt/Caesar.git</code>
               <Button size="sm" variant="ghost" className="p-2">

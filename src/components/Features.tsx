@@ -9,22 +9,22 @@ const Features = () => {
     {
       icon: <Settings className="h-8 w-8" />,
       image: serverIcon,
-      title: "Erweiterte Verwaltung",
-      description: "Verwalte deine Server mit Leichtigkeit durch unser intuitives Panel. Monitoring, Konfiguration und Wartung - alles an einem Ort.",
+      title: "Advanced management",
+      description: "Manage your servers with ease through our intuitive panel. Monitoring, configuration, and maintenance - all in one place.",
       color: "from-primary to-primary-glow"
     },
     {
       icon: <Cloud className="h-8 w-8" />,
       image: pluginIcon,
-      title: "Cloud-Integration",
-      description: "Nahtlose Integration mit Cloud-Services. Skaliere deine Projekte mühelos und nutze moderne Cloud-Infrastrukturen.",
+      title: "Cloud Integration",
+      description: "Seamless integration with cloud services. Scale your projects effortlessly and harness modern cloud infrastructures.",
       color: "from-accent to-accent-glow"
     },
     {
       icon: <Code className="h-8 w-8" />,
       image: developerIcon,
-      title: "Entwickler-Tools",
-      description: "Mächtige Tools für Entwickler, inklusive Plugin-Support und API-Zugang. Erweitere Caesar nach deinen Bedürfnissen.",
+      title: "Developer Tools",
+      description: "Powerful tools for developers, including plugin support and API access. Extend Caesar to fit your needs.",
       color: "from-primary-glow to-accent"
     }
   ];
@@ -35,11 +35,11 @@ const Features = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-6">
-            Wichtige Features
+            Important Features
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Caesar bietet alles, was du für professionelles Server-Management brauchst. 
-            Einfach, mächtig und vollständig anpassbar.
+            Caesar offers everything you need for professional server management.
+Simple, powerful, and fully customizable.
           </p>
         </div>
 
@@ -85,11 +85,11 @@ const Features = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-muted-foreground mb-6">
-            Bereit, die volle Power von Caesar zu entdecken?
+            Ready to explore the full power of Caesar?
           </p>
           <div className="inline-flex items-center gap-4">
             <div className="w-12 h-px bg-gradient-primary" />
-            <span className="text-primary font-semibold">Mehr erfahren</span>
+            <span className="text-primary font-semibold">Learn more</span>
             <div className="w-12 h-px bg-gradient-primary" />
           </div>
         </div>

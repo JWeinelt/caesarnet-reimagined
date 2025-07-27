@@ -11,9 +11,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">C</span>
-            </div>
+            <img src="/src/assets/logo.png" alt="Caesar Logo" className="w-8 h-8" />
             <span className="text-xl font-bold text-foreground">Caesar</span>
           </div>
 
@@ -23,7 +21,7 @@ const Navigation = () => {
               Features
             </a>
             <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-              Preise
+              Pricing
             </a>
             <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
               Plugins
@@ -43,7 +41,7 @@ const Navigation = () => {
               GitHub
             </Button>
             <Button variant="hero" size="sm">
-              Loslegen
+              Get started
             </Button>
           </div>
 
@@ -66,7 +64,7 @@ const Navigation = () => {
                 Features
               </a>
               <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
-                Preise
+                Pricing
               </a>
               <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
                 Plugins
