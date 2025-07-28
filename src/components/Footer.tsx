@@ -21,9 +21,9 @@ const Footer = () => {
       { name: "Contact", href: "https://caesarnet.cloud/contact" }
     ],
     "Legal": [
-      { name: "Privacy policy", href: "https://caesarnet.cloud/privacy" },
-      { name: "Imprint", href: "https://caesarnet.cloud/imprint" },
-      { name: "ToS", href: "https://caesarnet.cloud/tos" },
+      { name: "Datenschutz", href: "/datenschutz" },
+      { name: "Impressum", href: "/impressum" },
+      { name: "Terms of Service", href: "/terms" },
       { name: "License", href: "https://www.gnu.org/licenses/gpl-3.0.html" }
     ]
   };
