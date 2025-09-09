@@ -19,7 +19,7 @@ const Datenschutz = () => {
               className="text-muted-foreground hover:text-foreground"
             >
               <ChevronLeft className="w-4 h-4 mr-2" />
-              Zurück
+              Back
             </Button>
           </div>
           

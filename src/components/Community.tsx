@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { MessageCircle, Users, Heart, ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Community = () => {
   const communityFeatures = [
@@ -8,19 +9,22 @@ const Community = () => {
       icon: <MessageCircle className="h-6 w-6" />,
       title: "Discord Community",
       description: "Join our active Discord community and receive instant help from fellow users and developers.",
-      action: "Join Discord"
+      action: "Join Discord",
+      "link": "https://dc.caesarnet.cloud"
     },
     {
       icon: <Users className="h-6 w-6" />,
       title: "Forum",
       description: "Discuss new features, share your ideas, and collaborate with other developers.",
-      action: "Visit Forum"
+      action: "Visit Forum",
+      "link": ""
     },
     {
       icon: <Heart className="h-6 w-6" />,
       title: "Open Source",
       description: "Caesar is fully open source. Contribute to the project and help shape the future.",
-      action: "View GitHub"
+      action: "View GitHub",
+      "link": ""
     }
   ];
 
@@ -30,7 +34,7 @@ const Community = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-accent bg-clip-text text-transparent mb-6">
-            Become part of our amazing community
+            Become part of our amazing community!
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Get exclusive support, share your feedback, and connect with other server administrators.
@@ -40,7 +44,7 @@ const Community = () => {
         {/* Community Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {communityFeatures.map((feature, index) => (
-            <Card 
+            <Card
               key={index}
               className="group bg-gradient-card backdrop-blur-glass border border-white/10 p-8 hover:scale-105 transition-all duration-300 hover:shadow-accent"
             >
@@ -72,7 +76,7 @@ const Community = () => {
         <div className="relative overflow-hidden bg-gradient-hero rounded-3xl p-12 text-center">
           {/* Background Pattern */}
           <div className="absolute inset-0 bg-black/20" />
-          
+
           {/* Content */}
           <div className="relative z-10">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -81,13 +85,13 @@ const Community = () => {
             <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
               Join dozens of users who are already using Caesar today.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button variant="glass" size="xl" className="group bg-white/10 text-white border-white/20 hover:bg-white hover:text-black">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              
+
               <Button variant="ghost" size="xl" className="text-white/80 hover:text-white hover:bg-white/10">
                 Documentation
               </Button>
