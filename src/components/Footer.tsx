@@ -16,7 +16,7 @@ const Footer = () => {
     ],
     "Support": [
       { name: "Documentation", href: "https://docs.caesarnet.cloud", icon: <Book className="h-4 w-4" /> },
-      { name: "Support center", href: "https://support.caesarnet.cloud" },
+      { name: "Support center", href: "https://caesarnet.cloud/support" },
       { name: "Status", href: "https://status.caesarnet.cloud" },
       { name: "Contact", href: "https://caesarnet.cloud/contact" }
     ],

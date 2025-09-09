@@ -252,14 +252,14 @@ Wird ausgelöst, wenn ein Benutzer das System verlässt.
       <div className="min-h-screen bg-background">
         <Navigation />
         <div className="container mx-auto max-w-4xl py-20 px-4 text-center">
-          <h1 className="text-2xl font-bold mb-4">Artikel nicht gefunden</h1>
+          <h1 className="text-2xl font-bold mb-4">Article not found</h1>
           <p className="text-muted-foreground mb-8">
-            Der angeforderte Artikel konnte nicht gefunden werden.
+            The requested article could not be found.
           </p>
           <Link to="/support">
             <Button>
               <ChevronLeft className="w-4 h-4 mr-2" />
-              Zurück zum Support
+              Back to main support page
             </Button>
           </Link>
         </div>
