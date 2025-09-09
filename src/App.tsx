@@ -10,6 +10,7 @@ import Datenschutz from "./pages/Datenschutz";
 import TermsOfService from "./pages/TermsOfService";
 import Support from "./pages/Support";
 import SupportArticle from "./pages/SupportArticle";
+import Downloads from "./pages/Downloads";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/downloads" element={<Downloads />} />
           <Route path="/support" element={<Support />} />
           <Route path="/support/:category/:slug" element={<SupportArticle />} />
           <Route path="/impressum" element={<Impressum />} />

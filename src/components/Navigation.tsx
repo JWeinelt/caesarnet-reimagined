@@ -27,6 +27,9 @@ const Navigation = () => {
             <a href="/#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
               Plugins
             </a>
+            <Link to="/downloads" className="text-muted-foreground hover:text-foreground transition-colors">
+              Downloads
+            </Link>
             <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
               Support
             </Link>
