@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,10 +11,10 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3">
             <img src="/src/assets/logo.png" alt="Caesar Logo" className="w-8 h-8" />
             <span className="text-xl font-bold text-foreground">Caesar</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
@@ -26,9 +27,9 @@ const Navigation = () => {
             <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
               Plugins
             </a>
-            <a href="#support" className="text-muted-foreground hover:text-foreground transition-colors">
+            <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
               Support
-            </a>
+            </Link>
             <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </a>
@@ -69,9 +70,9 @@ const Navigation = () => {
               <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
                 Plugins
               </a>
-              <a href="#support" className="text-muted-foreground hover:text-foreground transition-colors">
+              <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
                 Support
-              </a>
+              </Link>
               <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
                 Docs
               </a>

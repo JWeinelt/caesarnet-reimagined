@@ -8,6 +8,8 @@ import NotFound from "./pages/NotFound";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import TermsOfService from "./pages/TermsOfService";
+import Support from "./pages/Support";
+import SupportArticle from "./pages/SupportArticle";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,8 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/support/:category/:slug" element={<SupportArticle />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/terms" element={<TermsOfService />} />
