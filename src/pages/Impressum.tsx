@@ -41,50 +41,62 @@ const Impressum = () => {
         <div className="max-w-4xl mx-auto px-6">
           <div className="glass-bg rounded-2xl p-8 md:p-12 space-y-8">
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Angaben gemäß § 5 TMG</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Operator and Contact Information</h2>
               <div className="text-muted-foreground space-y-2">
-                <p><strong>Caesar Development Team</strong></p>
-                <p>Musterstraße 123</p>
-                <p>12345 Musterstadt</p>
-                <p>Deutschland</p>
+                <p><strong>Julian Weinelt</strong></p>
+                <p>Silbergrund 73</p>
+                <p>32805 Horn-Bad Meinberg</p>
+                <p>Germany</p>
+                <p>contact@caesarnet.cloud</p>
               </div>
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Kontakt</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Legal Form</h2>
               <div className="text-muted-foreground space-y-2">
-                <p>E-Mail: contact@caesarnet.cloud</p>
-                <p>Website: https://caesarnet.cloud</p>
+                <p>The Caesar Project is an open-source initiative operated by
+                   Julian Weinelt. In addition to the open-source offerings, the website provides paid support 
+                   and hosting services for users of the Caesar system.</p>
               </div>
             </div>
 
             <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+              <h2 className="text-2xl font-semibold text-foreground mb-4">Responsible for Content</h2>
               <div className="text-muted-foreground space-y-2">
-                <p>Caesar Development Team</p>
-                <p>Musterstraße 123</p>
-                <p>12345 Musterstadt</p>
+                <p><strong>Julian Weinelt</strong></p>
+                <p>Silbergrund 73</p>
+                <p>32805 Horn-Bad Meinberg</p>
+                <p>Germany</p>
+                <p>contact@caesarnet.cloud</p>
               </div>
             </div>
 
-            <div>
-              <h2 className="text-2xl font-semibold text-foreground mb-4">Haftungsausschluss</h2>
-              
-              <h3 className="text-lg font-medium text-foreground mb-2">Haftung für Inhalte</h3>
-              <p className="text-muted-foreground mb-4">
-                Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht unter der Verpflichtung, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-              </p>
-              
-              <h3 className="text-lg font-medium text-foreground mb-2">Haftung für Links</h3>
-              <p className="text-muted-foreground mb-4">
-                Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
-              </p>
-              
-              <h3 className="text-lg font-medium text-foreground mb-2">Urheberrecht</h3>
-              <p className="text-muted-foreground">
-                Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
-              </p>
-            </div>
+<div>
+  <h2 className="text-2xl font-semibold text-foreground mb-4">Purpose of the Website</h2>
+  <div className="text-muted-foreground space-y-2">
+    <p>The Caesar website, including its Forum and Marketplace, serves to promote and support the
+       open-source Caesar system, facilitate community discussions, and provide a platform for developers
+        to publish and share plugins. Additionally, the website offers optional paid support and hosting
+         services to enhance user experience and functionality.</p>
+  </div>
+</div>
+
+<div>
+  <h2 className="text-2xl font-semibold text-foreground mb-4">Disclaimer</h2>
+  <div className="text-muted-foreground space-y-2">
+    <p>The Caesar Project Team strives to provide accurate and up-to-date
+       information on this website. However, we assume no liability for
+        the accuracy, completeness, or timeliness of the content provided.
+         External links are provided for convenience, and we are not responsible for the content of linked third-party websites.</p>
+  </div>
+</div>
+
+<div>
+  <h2 className="text-2xl font-semibold text-foreground mb-4">Last Updated</h2>
+  <div className="text-muted-foreground space-y-2">
+    <p>July 28, 2025</p>
+  </div>
+</div>
           </div>
         </div>
       </section>

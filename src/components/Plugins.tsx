@@ -11,22 +11,22 @@ const Plugins = () => {
 
   const featuredPlugins = [
     {
-      name: "Caesar-Echo+",
-      description: "Überwache Server-Performance in Echtzeit",
+      name: "Caesar-Echo",
+      description: "Easily communicate within your team using voice or text chats.",
       downloads: "20",
       rating: 4.9,
       category: "Communication"
     },
     {
       name: "Courier",
-      description: "Your integrated eMail client",
+      description: "Your integrated eMail client with many features",
       downloads: "25",
       rating: 4.8,
       category: "Communication"
     },
     {
       name: "Oculus",
-      description: "Manage and monitor your server with ease!",
+      description: "Manage and monitor your servers with ease!",
       downloads: "10",
       rating: 4.9,
       category: "Monitoring"
@@ -105,7 +105,7 @@ Caesar takes care of the rest.
           
           {/* Installation Steps */}
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {["Plugin auswählen", "Ein Klick installieren", "Sofort nutzen"].map((step, index) => (
+            {["Select plugin", "Install with one click", "Use instantly"].map((step, index) => (
               <div key={index} className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-gradient-accent rounded-full flex items-center justify-center text-white font-bold">
                   {index + 1}

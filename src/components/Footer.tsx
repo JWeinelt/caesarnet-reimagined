@@ -10,7 +10,7 @@ const Footer = () => {
     ],
     "Community": [
       { name: "Discord", href: "https://dc.caesarnet.cloud", icon: <MessageCircle className="h-4 w-4" /> },
-      { name: "GitHub", href: "https://github.com/Caesar", icon: <Github className="h-4 w-4" /> },
+      { name: "GitHub", href: "https://github.com/JWeinelt/Caesar", icon: <Github className="h-4 w-4" /> },
       { name: "Forum", href: "https://forum.caesarnet.cloud" },
       { name: "Blog", href: "https://blog.caesarnet.cloud" }
     ],
@@ -21,8 +21,8 @@ const Footer = () => {
       { name: "Contact", href: "https://caesarnet.cloud/contact" }
     ],
     "Legal": [
-      { name: "Datenschutz", href: "/datenschutz" },
-      { name: "Impressum", href: "/impressum" },
+      { name: "Privacy Policy", href: "/datenschutz" },
+      { name: "Imprint", href: "/impressum" },
       { name: "Terms of Service", href: "/terms" },
       { name: "License", href: "https://www.gnu.org/licenses/gpl-3.0.html" }
     ]
@@ -89,9 +89,9 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <span>Version 0.0.2</span>
+              <span>Version 1.3.6</span>
               <div className="w-px h-4 bg-border" />
-              <span>Last update: 27th July 2025</span>
+              <span>Last update: 9th September 2025</span>
               <div className="w-px h-4 bg-border" />
               <div className="flex items-center gap-1">
                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
