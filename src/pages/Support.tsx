@@ -13,61 +13,61 @@ const Support = () => {
   const categories = [
     {
       id: "getting-started",
-      title: "Erste Schritte",
+      title: "Getting Started",
       icon: Zap,
-      description: "Grundlagen und Setup von Caesar",
+      description: "All basics and the setup of Caesar",
       articles: [
-        { title: "Installation und Einrichtung", slug: "installation" },
-        { title: "Erstes Plugin erstellen", slug: "first-plugin" },
-        { title: "Caesar Grundlagen", slug: "basics" },
-        { title: "Systemanforderungen", slug: "requirements" }
+        { title: "Installation and Setup", slug: "installation" },
+        { title: "Create a plugin", slug: "first-plugin" },
+        { title: "Getting Started", slug: "basics" },
+        { title: "System Requirements", slug: "requirements" }
       ]
     },
     {
       id: "plugins",
-      title: "Plugin-Entwicklung",
+      title: "Plugin Development",
       icon: Code,
-      description: "Alles über Plugin-Entwicklung und API",
+      description: "Everything about developing and publishing plugins",
       articles: [
-        { title: "Plugin API Referenz", slug: "plugin-api" },
-        { title: "Hooks und Events", slug: "hooks-events" },
+        { title: "Plugin API Reference", slug: "plugin-api" },
+        { title: "Hooks and Events", slug: "hooks-events" },
         { title: "Best Practices", slug: "best-practices" },
-        { title: "Plugin Veröffentlichung", slug: "publishing" }
+        { title: "Publishing your plugin", slug: "publishing" }
       ]
     },
     {
       id: "troubleshooting",
-      title: "Fehlerbehebung",
+      title: "Troubleshooting",
       icon: Settings,
-      description: "Häufige Probleme und Lösungen",
+      description: "Frequent problems and solutions",
       articles: [
-        { title: "Häufige Fehler", slug: "common-errors" },
-        { title: "Performance Probleme", slug: "performance" },
-        { title: "Kompatibilitätsprobleme", slug: "compatibility" },
-        { title: "Debug-Modus aktivieren", slug: "debug-mode" }
+        { title: "Common errors", slug: "common-errors" },
+        { title: "Performance issues", slug: "performance" },
+        { title: "Compatibility problems", slug: "compatibility" },
+        { title: "Using the debug mode", slug: "debug-mode" }
       ]
     },
     {
       id: "security",
-      title: "Sicherheit",
+      title: "Security",
       icon: Shield,
-      description: "Sicherheit und Datenschutz",
+      description: "Security and Privacy",
       articles: [
-        { title: "Sicherheitsrichtlinien", slug: "security-guidelines" },
-        { title: "Datenschutz", slug: "data-privacy" },
-        { title: "Sichere Plugin-Entwicklung", slug: "secure-development" },
-        { title: "Schwachstellen melden", slug: "vulnerability-reporting" }
+        { title: "Security Guidelines", slug: "security-guidelines" },
+        { title: "Privacy Policy", slug: "data-privacy" },
+        { title: "Secure plugin development", slug: "secure-development" },
+        { title: "Reporting vulnerabilities", slug: "vulnerability-reporting" }
       ]
     },
     {
       id: "community",
       title: "Community",
       icon: Users,
-      description: "Community und Support",
+      description: "Community and Support",
       articles: [
         { title: "Community Guidelines", slug: "community-guidelines" },
-        { title: "Forum Nutzung", slug: "forum-usage" },
-        { title: "Beitrag leisten", slug: "contributing" },
+        { title: "Forum Guidelines", slug: "forum-usage" },
+        { title: "Contributing", slug: "contributing" },
         { title: "Discord Server", slug: "discord" }
       ]
     }
@@ -102,14 +102,14 @@ const Support = () => {
           {/* Search Section */}
           <div className="text-center mb-12">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              CAESAR-SUPPORT
+              CAESAR SUPPORT CENTER
             </h1>
             
             <div className="relative max-w-2xl mx-auto mb-8">
               <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground w-5 h-5" />
               <Input
                 type="text"
-                placeholder="Suchen Sie nach Hilfe-Artikeln..."
+                placeholder="Search for support articles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="pl-12 h-14 text-lg bg-card/50 backdrop-blur-sm border-border/50 focus:border-primary/50"
@@ -118,7 +118,7 @@ const Support = () => {
 
             <Button variant="outline" className="mb-8">
               <HelpCircle className="w-4 h-4 mr-2" />
-              Support kontaktieren
+              Contact our support
             </Button>
           </div>
         </div>
@@ -130,7 +130,7 @@ const Support = () => {
           {searchQuery && (
             <div className="mb-8">
               <h2 className="text-2xl font-semibold mb-4">
-                Suchergebnisse für "{searchQuery}"
+                Searching results for "{searchQuery}"
               </h2>
             </div>
           )}
@@ -172,11 +172,11 @@ const Support = () => {
           {filteredCategories.length === 0 && searchQuery && (
             <div className="text-center py-12">
               <HelpCircle className="w-16 h-16 mx-auto mb-4 text-muted-foreground" />
-              <h3 className="text-xl font-semibold mb-2">Keine Ergebnisse gefunden</h3>
+              <h3 className="text-xl font-semibold mb-2">No article found</h3>
               <p className="text-muted-foreground mb-6">
-                Wir konnten keine Artikel zu "{searchQuery}" finden.
+                We could not find any article relating to "{searchQuery}".
               </p>
-              <Button>Support kontaktieren</Button>
+              <Button>Contact the support</Button>
             </div>
           )}
         </div>
