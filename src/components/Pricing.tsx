@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check, Star, Crown, Trophy } from "lucide-react";
+import {useNavigate} from "react-router-dom";
 
 const Pricing = () => {
+  const navigate = useNavigate();
   const supportLevels = [
     {
       icon: <Trophy className="h-6 w-6" />,
@@ -131,12 +133,13 @@ const Pricing = () => {
 
               {/* Action Button */}
               <div className="mt-8">
-                <Button 
+                <Button
+                  onClick={() => navigate(index === 0 ? "/downloads" : "/" /*"/buying"*/)}
                   variant={level.popular ? "hero" : "glass"} 
                   className="w-full"
                   size="lg"
                 >
-                  {index === 0 ? "Get started" : "Buy plan"}
+                  {index === 0 ? "Get started" : "Not available"/*"Buy plan"*/}
                 </Button>
               </div>
             </Card>

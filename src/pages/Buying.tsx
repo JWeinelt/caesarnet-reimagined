@@ -23,44 +23,45 @@ const plans = [
     color: "text-amber-600",
     borderColor: "border-amber-200",
     features: [
-      "Community Forum Access",
-      "Basic Documentation",
-      "GitHub Issue Tracking",
-      "Open Source License"
+        "Community Support",
+        "Access to the forum",
+        "Open support channels on Discord",
+        "Caesar Documentation"
     ]
   },
   {
     id: "silver",
     name: "Silver Support",
-    price: "$29/month",
+    price: "€5/month",
     icon: Star,
     emoji: "🥈",
     color: "text-gray-600",
     borderColor: "border-gray-300",
     popular: true,
     features: [
-      "Everything in Bronze",
-      "Priority Email Support",
-      "Advanced Documentation",
-      "Plugin Development Guide",
-      "Monthly Q&A Sessions"
+        "Support via eMail (12hrs in average)",
+        "Priority in Discord Tickets",
+        "Priority at Discord support",
+        "Dedicated support and setup-service",
+        "Free hosting of your Caesar instance"
     ]
   },
   {
     id: "gold",
     name: "Gold Support",
-    price: "$99/month",
+    price: "€15/month",
     icon: Crown,
     emoji: "🥇",
     color: "text-yellow-600",
     borderColor: "border-yellow-300",
     features: [
-      "Everything in Silver",
-      "1-on-1 Support Calls",
-      "Custom Plugin Development",
-      "Priority Feature Requests",
-      "Direct Developer Access",
-      "Custom Training Sessions"
+        "Support via eMail (1hr in average)",
+        "Phone support",
+        "Highest priority on Discord",
+        "Dedicated point of contact",
+        "Custom Integration Support",
+        "Priority Plugin Reviews",
+        "Free sub-domain for your hosted instance"
     ]
   }
 ];

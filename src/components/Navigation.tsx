@@ -33,9 +33,6 @@ const Navigation = () => {
             <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
               Support
             </Link>
-            <Link to="/buying" className="text-muted-foreground hover:text-foreground transition-colors">
-              Buying
-            </Link>
             <a href="https://docs.caesarnet.cloud" className="text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </a>
@@ -67,13 +64,13 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-white/10 py-4">
             <div className="flex flex-col gap-4">
-              <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#features" className="text-muted-foreground hover:text-foreground transition-colors">
                 Features
               </a>
-              <a href="#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#pricing" className="text-muted-foreground hover:text-foreground transition-colors">
                 Pricing
               </a>
-              <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="/#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
                 Plugins
               </a>
               <Link to="/downloads" className="text-muted-foreground hover:text-foreground transition-colors">
@@ -85,7 +82,7 @@ const Navigation = () => {
               <Link to="/buying" className="text-muted-foreground hover:text-foreground transition-colors">
                 Buying
               </Link>
-              <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
+              <a href="https://docs.caesarnet.cloud" className="text-muted-foreground hover:text-foreground transition-colors">
                 Docs
               </a>
               <div className="flex flex-col gap-2 pt-4 border-t border-white/10">
@@ -94,7 +91,7 @@ const Navigation = () => {
                   GitHub
                 </Button>
                 <Button variant="hero" size="sm">
-                  Loslegen
+                  Get started
                 </Button>
               </div>
             </div>
