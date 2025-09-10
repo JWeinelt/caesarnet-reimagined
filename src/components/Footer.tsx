@@ -3,9 +3,9 @@ import { Github, MessageCircle, Book, Heart } from "lucide-react";
 const Footer = () => {
   const footerLinks = {
     "Software": [
-      { name: "Features", href: "#features" },
-      { name: "Pricing", href: "#pricing" },
-      { name: "Plugins", href: "#plugins" },
+      { name: "Features", href: "/#features" },
+      { name: "Pricing", href: "/#pricing" },
+      { name: "Plugins", href: "/#plugins" },
       { name: "Roadmap", href: "https://github.com/JWeinelt/Caesar/blob/main/RoadMap.md" }
     ],
     "Community": [
