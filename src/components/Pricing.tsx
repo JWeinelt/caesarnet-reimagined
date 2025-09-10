@@ -151,7 +151,7 @@ const Pricing = () => {
           <p className="text-muted-foreground mb-6">
             Questions about support options? We're here to help!
           </p>
-          <Button variant="glass" size="lg">
+          <Button onClick={() => navigate("/support")} variant="glass" size="lg">
             Get in touch
           </Button>
         </div>

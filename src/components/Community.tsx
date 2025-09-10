@@ -4,6 +4,7 @@ import { MessageCircle, Users, Heart, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Community = () => {
+  const navigate = useNavigate();
   const communityFeatures = [
     {
       icon: <MessageCircle className="h-6 w-6" />,
@@ -17,14 +18,14 @@ const Community = () => {
       title: "Forum",
       description: "Discuss new features, share your ideas, and collaborate with other developers.",
       action: "Visit Forum",
-      "link": ""
+      "link": "https://forum.caesarnet.cloud"
     },
     {
       icon: <Heart className="h-6 w-6" />,
       title: "Open Source",
       description: "Caesar is fully open source. Contribute to the project and help shape the future.",
       action: "View GitHub",
-      "link": ""
+      "link": "https://github.com/JWeinelt/Caesar"
     }
   ];
 
@@ -63,7 +64,7 @@ const Community = () => {
                 </p>
 
                 {/* Action Button */}
-                <Button variant="glass" className="group-hover:bg-accent group-hover:text-white transition-all">
+                <Button  onClick={() => navigate("/redirect?url=" + feature.link)} variant="glass" className="group-hover:bg-accent group-hover:text-white transition-all">
                   {feature.action}
                   <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -87,12 +88,12 @@ const Community = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="glass" size="xl" className="group bg-white/10 text-white border-white/20 hover:bg-white hover:text-black">
-                Get Started
+              <Button  onClick={() => navigate("/downloads")} variant="glass" size="xl" className="group bg-white/10 text-white border-white/20 hover:bg-white hover:text-black">
+                Download Caesar
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
 
-              <Button variant="ghost" size="xl" className="text-white/80 hover:text-white hover:bg-white/10">
+              <Button onClick={() => navigate("/redirect?url=https://docs.caesarnet.cloud")} variant="ghost" size="xl" className="text-white/80 hover:text-white hover:bg-white/10">
                 Documentation
               </Button>
             </div>

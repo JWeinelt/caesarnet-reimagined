@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Download, Star, Users } from "lucide-react";
+import {useNavigate} from "react-router-dom";
 
 const Plugins = () => {
   const stats = [
@@ -8,6 +9,8 @@ const Plugins = () => {
     { label: "Active developers", value: "10+", icon: <Users className="h-5 w-5" /> },
     { label: "Downloads", value: "0", icon: <Star className="h-5 w-5" /> }
   ];
+
+  const navigate = useNavigate();
 
   const featuredPlugins = [
     {
@@ -83,7 +86,7 @@ const Plugins = () => {
                   <p className="text-sm text-muted-foreground mb-4">{plugin.description}</p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">{plugin.downloads} Downloads</span>
-                    <Button variant="ghost" size="sm">
+                    <Button onClick={() => navigate("/redirect?url=https://market.caesarnet.cloud/view?plugin=" + plugin.name)} variant="ghost" size="sm">
                       <Download className="h-4 w-4" />
                     </Button>
                   </div>
@@ -116,7 +119,7 @@ Caesar takes care of the rest.
             ))}
           </div>
 
-          <Button variant="accent" size="lg" className="group">
+          <Button  onClick={() => navigate("/redirect?url=https://market.caesarnet.cloud")} variant="accent" size="lg" className="group">
             Visit Plugin Marketplace
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>

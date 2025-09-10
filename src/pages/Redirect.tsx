@@ -18,7 +18,9 @@ const Redirect = () => {
     const timer = setTimeout(() => {
       if (url.startsWith('http://') || url.startsWith('https://')) {
         // External URL
-        window.location.href = url;
+        window.open(url, "_blank")
+        window.history.back();
+        //window.location.href = url;
       } else {
         // Internal route
         navigate(url);
