@@ -31,37 +31,54 @@ const downloads = [
     icon: <Monitor className="w-8 h-8" />,
     version: "v2.1.0",
     size: "156 MB",
-    platform: "Windows, macOS, Linux",
+    platform: "Windows, macOS, Linux, Android",
     downloadUrl: "#", // Replace with actual download URL or API endpoint
-    isRecommended: false,
+    isRecommended: true,
     features: [
       "Intuitive user interface",
-      "Real-time server monitoring",
+      "Real-time server management",
       "Plugin management",
       "Cross-platform compatibility"
     ]
   },
   {
+    id: "developer",
+    name: "Developer Tools & SDK",
+    description: "The Developer SDK Plugin providing all API components for the server.",
+    icon: <Monitor className="w-8 h-8" />,
+    version: "v2.1.0",
+    size: "1 MB",
+    platform: "Windows, macOS, Linux",
+    downloadUrl: "#", // Replace with actual download URL or API endpoint
+    isRecommended: false,
+    features: [
+        "Intuitive API",
+        "Developer Documentation",
+        "Plugin Creator tools",
+        "Architecture Documentation"
+    ]
+  },
+  {
     id: "connector",
     name: "Caesar Connector",
-    description: "Lightweight connector for integrating Caesar with existing systems and third-party applications.",
+    description: "Lightweight connector for linking your Caesar Server with Minecraft-Servers",
     icon: <Plug2 className="w-8 h-8" />,
     version: "v1.8.2",
     size: "89 MB",
-    platform: "All Platforms",
+    platform: "Minecraft 1.8.9 or newer",
     downloadUrl: "#", // Replace with actual download URL or API endpoint
     isRecommended: false,
     features: [
       "Easy integration",
-      "REST API support",
-      "Webhook capabilities",
-      "Minimal resource usage"
+      "Secured connection possible",
+      "Minimal resource usage",
+      "For both standalone and CloudNET integrated servers"
     ]
   },
   {
     id: "other",
-    name: "Development Tools",
-    description: "Additional development tools, SDKs, and utilities for Caesar plugin development.",
+    name: "Client extras",
+    description: "Additional software shipped with the client as well as the sources of the components.",
     icon: <Package className="w-8 h-8" />,
     version: "v1.5.1",
     size: "412 MB",
@@ -69,10 +86,10 @@ const downloads = [
     downloadUrl: "#", // Replace with actual download URL or API endpoint
     isRecommended: false,
     features: [
-      "Plugin development SDK",
-      "Code generators",
-      "Testing utilities",
-      "Documentation tools"
+      "Caesar-Worker",
+      "Caesar-Oculus",
+      "Documentation tools",
+      "Caesar Sources"
     ]
   }
 ];
