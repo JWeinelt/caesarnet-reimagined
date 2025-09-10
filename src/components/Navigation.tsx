@@ -33,6 +33,9 @@ const Navigation = () => {
             <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
               Support
             </Link>
+            <Link to="/buying" className="text-muted-foreground hover:text-foreground transition-colors">
+              Buying
+            </Link>
             <a href="https://docs.caesarnet.cloud" className="text-muted-foreground hover:text-foreground transition-colors">
               Docs
             </a>
@@ -73,8 +76,14 @@ const Navigation = () => {
               <a href="#plugins" className="text-muted-foreground hover:text-foreground transition-colors">
                 Plugins
               </a>
+              <Link to="/downloads" className="text-muted-foreground hover:text-foreground transition-colors">
+                Downloads
+              </Link>
               <Link to="/support" className="text-muted-foreground hover:text-foreground transition-colors">
                 Support
+              </Link>
+              <Link to="/buying" className="text-muted-foreground hover:text-foreground transition-colors">
+                Buying
               </Link>
               <a href="#docs" className="text-muted-foreground hover:text-foreground transition-colors">
                 Docs

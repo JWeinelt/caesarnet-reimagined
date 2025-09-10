@@ -11,6 +11,7 @@ import TermsOfService from "./pages/TermsOfService";
 import Support from "./pages/Support";
 import SupportArticle from "./pages/SupportArticle";
 import Downloads from "./pages/Downloads";
+import Buying from "./pages/Buying";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/downloads" element={<Downloads />} />
           <Route path="/support" element={<Support />} />
           <Route path="/support/:category/:slug" element={<SupportArticle />} />
+          <Route path="/buying" element={<Buying />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/terms" element={<TermsOfService />} />
