@@ -12,6 +12,7 @@ import Support from "./pages/Support";
 import SupportArticle from "./pages/SupportArticle";
 import Downloads from "./pages/Downloads";
 import Buying from "./pages/Buying";
+import Redirect from "./pages/Redirect";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/support" element={<Support />} />
           <Route path="/support/:category/:slug" element={<SupportArticle />} />
           <Route path="/buying" element={<Buying />} />
+          <Route path="/redirect" element={<Redirect />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/terms" element={<TermsOfService />} />
